@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		992771A11DE770BA00E71450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992771A01DE770BA00E71450 /* AppDelegate.swift */; };
-		992771A31DE770BA00E71450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992771A21DE770BA00E71450 /* ViewController.swift */; };
+		992771A31DE770BA00E71450 /* URLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992771A21DE770BA00E71450 /* URLController.swift */; };
 		992771A61DE770BA00E71450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992771A41DE770BA00E71450 /* Main.storyboard */; };
 		992771A91DE770BA00E71450 /* WiFiCar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 992771A71DE770BA00E71450 /* WiFiCar.xcdatamodeld */; };
 		992771AB1DE770BA00E71450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992771AA1DE770BA00E71450 /* Assets.xcassets */; };
 		992771AE1DE770BA00E71450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992771AC1DE770BA00E71450 /* LaunchScreen.storyboard */; };
+		992771B61DE7721E00E71450 /* JoystickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992771B51DE7721E00E71450 /* JoystickController.swift */; };
+		992771E81DEBDCA300E71450 /* TiltController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992771E71DEBDCA300E71450 /* TiltController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9927719D1DE770BA00E71450 /* WiFiCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		992771A01DE770BA00E71450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		992771A21DE770BA00E71450 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		992771A21DE770BA00E71450 /* URLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLController.swift; sourceTree = "<group>"; };
 		992771A51DE770BA00E71450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		992771A81DE770BA00E71450 /* WiFiCar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WiFiCar.xcdatamodel; sourceTree = "<group>"; };
 		992771AA1DE770BA00E71450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992771AD1DE770BA00E71450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		992771AF1DE770BA00E71450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992771B51DE7721E00E71450 /* JoystickController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickController.swift; sourceTree = "<group>"; };
+		992771E71DEBDCA300E71450 /* TiltController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiltController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				992771A01DE770BA00E71450 /* AppDelegate.swift */,
-				992771A21DE770BA00E71450 /* ViewController.swift */,
+				992771A21DE770BA00E71450 /* URLController.swift */,
 				992771A41DE770BA00E71450 /* Main.storyboard */,
+				992771B51DE7721E00E71450 /* JoystickController.swift */,
+				992771E71DEBDCA300E71450 /* TiltController.swift */,
 				992771AA1DE770BA00E71450 /* Assets.xcassets */,
 				992771AC1DE770BA00E71450 /* LaunchScreen.storyboard */,
 				992771AF1DE770BA00E71450 /* Info.plist */,
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992771A31DE770BA00E71450 /* ViewController.swift in Sources */,
+				992771A31DE770BA00E71450 /* URLController.swift in Sources */,
 				992771A11DE770BA00E71450 /* AppDelegate.swift in Sources */,
 				992771A91DE770BA00E71450 /* WiFiCar.xcdatamodeld in Sources */,
+				992771B61DE7721E00E71450 /* JoystickController.swift in Sources */,
+				992771E81DEBDCA300E71450 /* TiltController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +273,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = WiFiCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.WiFiCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47FWPX3KEU;
 				INFOPLIST_FILE = WiFiCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.WiFiCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +314,7 @@
 				992771B41DE770BA00E71450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
