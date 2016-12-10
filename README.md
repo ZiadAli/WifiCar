@@ -1,0 +1,3 @@
+# WifiCar
+
+Use this app to control a TI-MSP430 FRAM board using an IOT module. Set the IP address on the first screen and make sure you open the page before continuing (the page must be opened on the device you are using or the app won't work). You can then press the segue button to proceed to the next screen and send the car commands using buttons, or (on another screen), using the accelerometer in the iPhone. To change the settings, change the command structure in the code. Also, ensure that your commands duration times are based on a timer/interrupt, not a delay, or you will get a lot of backlog when using the tilt feature.
